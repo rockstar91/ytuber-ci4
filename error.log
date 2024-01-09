@@ -1,0 +1,1067 @@
+[Tue May 12 14:04:01.143007 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP Fatal error:  Cannot redeclare App\\Entities\\Task::$casts in /Users/me/Sites/ytuber-ci4.local/app/Entities/Task.php on line 29
+[Tue May 12 14:04:01.143315 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP Stack trace:
+[Tue May 12 14:04:01.143366 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Tue May 12 14:04:01.143431 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Tue May 12 14:04:01.143511 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Tue May 12 14:04:01.143561 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Tue May 12 14:04:01.143605 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   5. App\\Controllers\\Task->getTaskById() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Tue May 12 14:04:01.143648 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   6. App\\Models\\Task->find() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Task.php:12
+[Tue May 12 14:04:01.143689 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   7. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Tue May 12 14:04:01.143772 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Tue May 12 14:04:01.143848 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Tue May 12 14:04:01.143898 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Tue May 12 14:04:01.143940 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  11. is_subclass_of() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Tue May 12 14:04:01.143980 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  12. spl_autoload_call() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Tue May 12 14:04:01.144020 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  13. CodeIgniter\\Autoloader\\Autoloader->loadClass() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Tue May 12 14:04:01.144059 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  14. CodeIgniter\\Autoloader\\Autoloader->loadInNamespace() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:258
+[Tue May 12 14:04:01.144109 2020] [php7:notice] [pid 60501] [client 127.0.0.1:62541] PHP  15. CodeIgniter\\Autoloader\\Autoloader->requireFile() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:296
+[Wed May 13 21:18:16.009906 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP Fatal error:  App\\Models\\AccountModelLocator cannot use App\\Models\\AccountGoogleYoutubeModel - it is not a trait in /Users/me/Sites/ytuber-ci4.local/app/Models/AccountModelLocator.php on line 15
+[Wed May 13 21:18:16.010222 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP Stack trace:
+[Wed May 13 21:18:16.010275 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:18:16.010309 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:18:16.010340 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:18:16.010417 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:18:16.010459 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:18:16.010486 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:18:16.010511 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   7. spl_autoload_call() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:56
+[Wed May 13 21:18:16.010576 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   8. CodeIgniter\\Autoloader\\Autoloader->loadClass() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:56
+[Wed May 13 21:18:16.010602 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP   9. CodeIgniter\\Autoloader\\Autoloader->loadInNamespace() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:258
+[Wed May 13 21:18:16.010628 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP  10. CodeIgniter\\Autoloader\\Autoloader->requireFile() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:296
+[Wed May 13 21:18:16.010653 2020] [php7:notice] [pid 442] [client 127.0.0.1:59916] PHP  11. require_once() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:365
+[Wed May 13 21:20:14.126539 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP Fatal error:  App\\Models\\AccountModelLocator cannot use App\\Models\\AccountGoogleYoutubeModel - it is not a trait in /Users/me/Sites/ytuber-ci4.local/app/Models/AccountModelLocator.php on line 15
+[Wed May 13 21:20:14.127193 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP Stack trace:
+[Wed May 13 21:20:14.127249 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:20:14.127283 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:20:14.127313 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:20:14.127342 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:20:14.127370 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:20:14.127399 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:20:14.127427 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   7. spl_autoload_call() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:56
+[Wed May 13 21:20:14.127455 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   8. CodeIgniter\\Autoloader\\Autoloader->loadClass() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:56
+[Wed May 13 21:20:14.127484 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP   9. CodeIgniter\\Autoloader\\Autoloader->loadInNamespace() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:258
+[Wed May 13 21:20:14.127512 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP  10. CodeIgniter\\Autoloader\\Autoloader->requireFile() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:296
+[Wed May 13 21:20:14.127540 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59921] PHP  11. require_once() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:365
+[Wed May 13 21:26:11.704692 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:26:11.710577 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP Stack trace:
+[Wed May 13 21:26:11.710653 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:26:11.710702 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:26:11.710747 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:26:11.710791 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:26:11.710834 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:26:11.710878 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:26:11.710921 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:26:11.710964 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:26:11.711007 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:26:11.711050 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:26:11.711092 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:26:11.711135 2020] [php7:notice] [pid 442] [client 127.0.0.1:59975] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:26:46.039672 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:26:46.039823 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP Stack trace:
+[Wed May 13 21:26:46.039858 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:26:46.039891 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:26:46.039923 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:26:46.039953 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:26:46.039983 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:26:46.040013 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:26:46.040067 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:26:46.040095 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:26:46.040122 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:26:46.040149 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:26:46.040177 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:26:46.040204 2020] [php7:notice] [pid 2540] [client 127.0.0.1:59977] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:27:20.159962 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:27:20.160129 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP Stack trace:
+[Wed May 13 21:27:20.160163 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:27:20.160196 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:27:20.160227 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:27:20.160257 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:27:20.160287 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:27:20.160317 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:27:20.160346 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:27:20.160376 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:27:20.160406 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:27:20.160436 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:27:20.160465 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:27:20.160495 2020] [php7:notice] [pid 2543] [client 127.0.0.1:59981] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:28:17.718562 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:28:17.718730 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP Stack trace:
+[Wed May 13 21:28:17.718763 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:28:17.718792 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:28:17.718820 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:28:17.718848 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:28:17.718875 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:28:17.718902 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:28:17.718929 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:28:17.718956 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:28:17.718982 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:28:17.719009 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:28:17.719036 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:28:17.719063 2020] [php7:notice] [pid 442] [client 127.0.0.1:59983] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:28:33.073422 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:28:33.073584 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP Stack trace:
+[Wed May 13 21:28:33.073618 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:28:33.073650 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:28:33.073680 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:28:33.073709 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:28:33.073738 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:28:33.073767 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:28:33.073796 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:28:33.073844 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:28:33.073871 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:28:33.073897 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:28:33.073923 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:28:33.073950 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60004] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:28:34.554655 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:28:34.554817 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP Stack trace:
+[Wed May 13 21:28:34.554849 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:28:34.554878 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:28:34.554906 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:28:34.554934 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:28:34.554961 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:28:34.554988 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:28:34.555015 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:28:34.555041 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:28:34.555068 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:28:34.555095 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:28:34.555122 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:28:34.555149 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60005] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:29:25.506695 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:29:25.506853 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP Stack trace:
+[Wed May 13 21:29:25.512630 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:29:25.512812 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:29:25.512892 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:29:25.512980 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:29:25.513077 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:29:25.513138 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:29:25.513191 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:29:25.513246 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:29:25.513296 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:29:25.513345 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:29:25.513393 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:29:25.513445 2020] [php7:notice] [pid 2543] [client 127.0.0.1:60007] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:30:13.367955 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:30:13.373624 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP Stack trace:
+[Wed May 13 21:30:13.373690 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:30:13.373727 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:30:13.373759 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:30:13.373790 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:30:13.373820 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:30:13.373851 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:30:13.373881 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:30:13.373911 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:30:13.374038 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:30:13.374081 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:30:13.374112 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:30:13.374140 2020] [php7:notice] [pid 442] [client 127.0.0.1:60009] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:30:14.333564 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:30:14.333721 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP Stack trace:
+[Wed May 13 21:30:14.333751 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:30:14.333781 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:30:14.333808 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:30:14.333835 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:30:14.333862 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:30:14.333888 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:30:14.333914 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:30:14.333940 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:30:14.333966 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:30:14.333992 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:30:14.334019 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:30:14.334045 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60010] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:30:15.172570 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:30:15.172710 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP Stack trace:
+[Wed May 13 21:30:15.172741 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:30:15.172788 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:30:15.172817 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:30:15.172845 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:30:15.172872 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:30:15.172899 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:30:15.172926 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:30:15.172953 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:30:15.172980 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:30:15.173007 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:30:15.173035 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:30:15.173062 2020] [php7:notice] [pid 2542] [client 127.0.0.1:60011] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:31:07.921082 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:31:07.921240 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP Stack trace:
+[Wed May 13 21:31:07.921276 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:31:07.921309 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:31:07.921340 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:31:07.921370 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:31:07.921400 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:31:07.921430 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:31:07.921459 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:57
+[Wed May 13 21:31:07.921489 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:31:07.921547 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:31:07.921576 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:31:07.921603 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:31:07.921631 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60014] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:33:03.959833 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:33:03.965710 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP Stack trace:
+[Wed May 13 21:33:03.965836 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:33:03.965905 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:33:03.965962 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:33:03.966018 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:33:03.966073 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:33:03.966128 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:33:03.966182 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:58
+[Wed May 13 21:33:03.966246 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:33:03.966292 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:33:03.966335 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:33:03.966378 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:33:03.966421 2020] [php7:notice] [pid 2544] [client 127.0.0.1:60035] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:33:04.026528 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:33:04.026689 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP Stack trace:
+[Wed May 13 21:33:04.026725 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:33:04.026758 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:33:04.026822 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:33:04.026852 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:33:04.026880 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:33:04.026908 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:33:04.026935 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:58
+[Wed May 13 21:33:04.026964 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:33:04.026991 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:33:04.027019 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:33:04.027047 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:33:04.027075 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60036] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:34:44.529477 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:34:44.529635 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP Stack trace:
+[Wed May 13 21:34:44.529671 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:34:44.529704 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:34:44.529736 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:34:44.529766 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:34:44.529797 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:34:44.529827 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:34:44.529858 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:58
+[Wed May 13 21:34:44.529888 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:34:44.529918 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:34:44.529972 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:34:44.530001 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:34:44.530028 2020] [php7:notice] [pid 2545] [client 127.0.0.1:60041] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Wed May 13 21:36:42.414125 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP Fatal error:  Class 'App\\Entities\\AccountsGoogleYoutube' not found in /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php on line 169
+[Wed May 13 21:36:42.414283 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP Stack trace:
+[Wed May 13 21:36:42.414319 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Wed May 13 21:36:42.414352 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Wed May 13 21:36:42.414383 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Wed May 13 21:36:42.414414 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Wed May 13 21:36:42.414443 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   5. App\\Controllers\\Tasks->test() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:914
+[Wed May 13 21:36:42.414473 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   6. App\\Entities\\Account->getAccountData() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Tasks.php:21
+[Wed May 13 21:36:42.414503 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   7. App\\Models\\AccountGoogleYoutubeModel->find() /Users/me/Sites/ytuber-ci4.local/app/Entities/Account.php:58
+[Wed May 13 21:36:42.414532 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   8. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Wed May 13 21:36:42.414562 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP   9. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Wed May 13 21:36:42.414592 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP  10. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Wed May 13 21:36:42.414621 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP  11. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Wed May 13 21:36:42.414651 2020] [php7:notice] [pid 2539] [client 127.0.0.1:60047] PHP  12. mysqli_result->fetch_object() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:169
+[Tue May 26 18:13:37.184223 2020] [autoindex:error] [pid 6167] [client 127.0.0.1:54605] AH01276: Cannot serve directory /Users/me/Sites/ytuber-ci4.local/public/tests/: No matching DirectoryIndex (index.html,index.html,index.php,index.html,index.php) found, and server-generated directory index forbidden by Options directive
+[Tue May 26 18:22:05.525273 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP Warning:  file(\xd0\xa0\xd0\xb0\xd0\xb1\xd0\xbe\xd1\x87\xd0\xb8\xd0\xb9 \xd0\xbb\xd0\xb8\xd1\x81\xd1\x82 (\xd0\x9e\xd1\x82\xd0\xb2\xd0\xb5\xd1\x82\xd1\x8b).csv): failed to open stream: Permission denied in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 32
+[Tue May 26 18:22:05.526000 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP Stack trace:
+[Tue May 26 18:22:05.526071 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 18:22:05.526117 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP   2. readCsvToArray() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:22
+[Tue May 26 18:22:05.526157 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP   3. file() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:32
+[Tue May 26 18:22:05.526500 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 34
+[Tue May 26 18:22:05.526540 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP Stack trace:
+[Tue May 26 18:22:05.526579 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 18:22:05.526617 2020] [php7:notice] [pid 340] [client 127.0.0.1:56684] PHP   2. readCsvToArray() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:22
+[Tue May 26 18:29:07.075220 2020] [php7:notice] [pid 14292] [client 127.0.0.1:58368] PHP Fatal error:  Uncaught Error: Call to a member function find() on int in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:17\nStack trace:\n#0 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 17
+[Tue May 26 18:41:29.442655 2020] [php7:notice] [pid 340] [client 127.0.0.1:61353] PHP Parse error:  syntax error, unexpected end of file in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 63
+[Tue May 26 18:43:01.472038 2020] [php7:notice] [pid 14242] [client 127.0.0.1:61723] PHP Parse error:  syntax error, unexpected end of file in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 64
+[Tue May 26 19:05:06.819474 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  array_slice() expects at least 2 parameters, 1 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:06.825354 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:06.825456 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:06.825520 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. array_slice() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:05:06.825762 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  print_r() expects at most 2 parameters, 3 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:06.825801 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:06.825839 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:06.825877 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. print_r() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:05:08.187843 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  array_slice() expects at least 2 parameters, 1 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:08.188127 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:08.188174 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:08.188215 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. array_slice() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:05:08.188303 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  print_r() expects at most 2 parameters, 3 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:08.188370 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:08.188406 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:08.188441 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. print_r() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:05:10.668781 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  array_slice() expects at least 2 parameters, 1 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:10.669098 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:10.669177 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:10.669260 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. array_slice() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:05:10.669379 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Warning:  print_r() expects at most 2 parameters, 3 given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 18
+[Tue May 26 19:05:10.669416 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP Stack trace:
+[Tue May 26 19:05:10.669451 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:05:10.669485 2020] [php7:notice] [pid 14292] [client 127.0.0.1:50696] PHP   2. print_r() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:18
+[Tue May 26 19:16:06.272484 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:06.274152 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Stack trace:
+[Tue May 26 19:16:06.274211 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:06.274246 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:06.275328 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:06.275385 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Stack trace:
+[Tue May 26 19:16:06.275420 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:06.275452 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:06.275536 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:06.275566 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Stack trace:
+[Tue May 26 19:16:06.275595 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:06.275624 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:06.275693 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:06.275724 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP Stack trace:
+[Tue May 26 19:16:06.275757 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:06.275841 2020] [php7:notice] [pid 14242] [client 127.0.0.1:53347] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:31.148706 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:31.148876 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Stack trace:
+[Tue May 26 19:16:31.148911 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:31.148943 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:31.149014 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:31.149043 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Stack trace:
+[Tue May 26 19:16:31.149072 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:31.149102 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:31.149168 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:31.149197 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Stack trace:
+[Tue May 26 19:16:31.149226 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:31.149255 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:31.149312 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:31.149340 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Stack trace:
+[Tue May 26 19:16:31.149369 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:31.149398 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:31.149629 2020] [php7:notice] [pid 14292] [client 127.0.0.1:53449] PHP Fatal error:  Uncaught Error: Call to undefined function array_sort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:16:43.537756 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:43.537953 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:43.537996 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:43.538032 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:43.538267 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:43.538304 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:43.538339 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:43.538414 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:43.538494 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:43.538525 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:43.538556 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:43.538587 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:43.538653 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:43.538683 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:43.538713 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:43.538744 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:43.539034 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Fatal error:  Uncaught Error: Call to undefined function array_sort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:16:45.084772 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:45.084917 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:45.084947 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:45.084974 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:45.085046 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:45.085072 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:45.085096 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:45.085121 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:45.085181 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:45.085206 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:45.085230 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:45.085255 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:45.085306 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:45.085330 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:45.085371 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:45.085397 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:45.085613 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Fatal error:  Uncaught Error: Call to undefined function array_sort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:16:46.053896 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:46.054064 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:46.054112 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:46.054143 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:46.054226 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:46.054253 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:46.054279 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:46.054305 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:46.054369 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:46.054395 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:46.054421 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:46.054447 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:46.054502 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 53
+[Tue May 26 19:16:46.054527 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Stack trace:
+[Tue May 26 19:16:46.054553 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:16:46.054579 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:16:46.054817 2020] [php7:notice] [pid 14243] [client 127.0.0.1:53499] PHP Fatal error:  Uncaught Error: Call to undefined function array_sort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:18:12.860321 2020] [php7:notice] [pid 340] [client 127.0.0.1:53857] PHP Fatal error:  Uncaught Error: Call to undefined function array_ksort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:18:12.937060 2020] [php7:notice] [pid 340] [client 127.0.0.1:53857] PHP Fatal error:  Uncaught Error: Call to undefined function array_ksort() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:61\nStack trace:\n#0 /Users/me/Sites/ytuber-ci4.local/public/tests/index.php(19): emInCalculateTotal(Array)\n#1 {main}\n  thrown in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.621586 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Notice:  Undefined index: em_in_total in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.627572 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Stack trace:
+[Tue May 26 19:23:15.627717 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:15.627784 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:15.627914 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.627971 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Stack trace:
+[Tue May 26 19:23:15.628027 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:15.628082 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:15.628202 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.628259 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Stack trace:
+[Tue May 26 19:23:15.628318 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:15.628376 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:15.628472 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.628522 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Stack trace:
+[Tue May 26 19:23:15.628574 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:15.628626 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:15.628714 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:15.628781 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP Stack trace:
+[Tue May 26 19:23:15.628839 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:15.628892 2020] [php7:notice] [pid 14292] [client 127.0.0.1:55086] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:22.852264 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Notice:  Undefined index: em_in_total in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:22.852547 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Stack trace:
+[Tue May 26 19:23:22.852589 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:22.852628 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:22.852910 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Notice:  Undefined index: em_in_1 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:22.852945 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Stack trace:
+[Tue May 26 19:23:22.852979 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:22.853012 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:22.853102 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Notice:  Undefined index: em_in_3 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:22.853134 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Stack trace:
+[Tue May 26 19:23:22.853225 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:22.853292 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:22.853453 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Notice:  Undefined index: em_in_4 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:22.853490 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Stack trace:
+[Tue May 26 19:23:22.853533 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:22.853567 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 19:23:22.853626 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Notice:  Undefined index: em_in_2 in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 61
+[Tue May 26 19:23:22.853658 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP Stack trace:
+[Tue May 26 19:23:22.853689 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 19:23:22.853721 2020] [php7:notice] [pid 14241] [client 127.0.0.1:55087] PHP   2. emInCalculateTotal() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:19
+[Tue May 26 20:10:40.736374 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.736934 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.736986 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.737023 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.737319 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.737368 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.737435 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.737478 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.737762 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.737804 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.737837 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.737867 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.738132 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.738162 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.738196 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.738229 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.738533 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.738573 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.738607 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.738638 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.738900 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.738931 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.738960 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.738989 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.739387 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.739436 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.739472 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.739504 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.739875 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.739915 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.739948 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.739979 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.740283 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.740370 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.740422 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.740457 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.740783 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.740824 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.740857 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.740887 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.741147 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.741177 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.741207 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.741236 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.741644 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.741686 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.741720 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.741751 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.742244 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.742313 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.742472 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.742514 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.743150 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.743216 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.743308 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.743400 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.743747 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.743855 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.743920 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.743957 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.744393 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.744457 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.744499 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.744530 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.744794 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.744825 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.744854 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.744883 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.745133 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.745163 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.745192 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.745220 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.745588 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.745622 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.745660 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.745748 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.746042 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.746076 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.746108 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.746138 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.746403 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.746433 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.746463 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.746495 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.746898 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.746937 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.746970 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.747000 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.747261 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.747293 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.747322 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.747351 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.747601 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.747631 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.747659 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.747688 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.748101 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.748144 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.748184 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.748226 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.748511 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.748544 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.748574 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.748604 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.749000 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.749050 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.749096 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.749142 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.749678 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.749717 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.749749 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.749779 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.750035 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.750065 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.750094 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.750123 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.750391 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.750421 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.750451 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.750480 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.750865 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.750900 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.750932 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.750999 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.751536 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.751611 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.751688 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.751782 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.752290 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.752329 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.752362 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.752393 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.752697 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.752741 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.752775 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.752806 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.753075 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.753106 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.753136 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.753165 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.753419 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.753449 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.753478 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.753506 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.753861 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.753903 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.753953 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.754035 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.754370 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  array_merge(): Expected parameter 3 to be an array, null given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 33
+[Tue May 26 20:10:40.754411 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.754444 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.754475 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   2. array_merge() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:33
+[Tue May 26 20:10:40.754592 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.754670 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.754778 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.754854 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.754888 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.754919 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.754971 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755033 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755075 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755132 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755163 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755194 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755239 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755268 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755297 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755340 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755368 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755397 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755439 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755467 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755496 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755561 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755591 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755620 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755736 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755790 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.755828 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.755884 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.755963 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756023 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756080 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756113 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756143 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756189 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756218 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756246 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756288 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756316 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756376 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756496 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756721 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756773 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756828 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756858 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.756887 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.756959 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.756998 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757042 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757136 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757177 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757215 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757265 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757305 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757397 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757459 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757490 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757521 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757568 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757599 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757628 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757671 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757699 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757728 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757770 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757798 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757827 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.757868 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.757897 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.757925 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758015 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758097 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758157 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758220 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758251 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758281 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758327 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758356 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758388 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758475 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758512 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758576 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758658 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758724 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758777 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.758865 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.758919 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.758981 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759071 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759107 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.759148 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759205 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759256 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.759295 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759440 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759486 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.759540 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759624 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759660 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.759691 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759743 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759813 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.759857 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.759933 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.759987 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.760036 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.760120 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.760241 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.760318 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.760424 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.760503 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.760552 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 20:10:40.760607 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Warning:  Invalid argument supplied for foreach() in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 20:10:40.760638 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP Stack trace:
+[Tue May 26 20:10:40.760669 2020] [php7:notice] [pid 14243] [client 127.0.0.1:49840] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:36:34.428004 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57116] PHP Parse error:  syntax error, unexpected '$person' (T_VARIABLE) in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 73
+[Tue May 26 21:51:14.614368 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fopen(file.csv): failed to open stream: Permission denied in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 21:51:14.614525 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.614560 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.614591 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fopen() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:45
+[Tue May 26 21:51:14.614683 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.614713 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.614742 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.614771 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.614908 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.614938 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.614968 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.614997 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.615099 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.615129 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.615158 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.615189 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.615323 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.615364 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.615475 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.615591 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.615815 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.615885 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.615945 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.615985 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.616154 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.616225 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.616296 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.616344 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.616502 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.616537 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.616568 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.616598 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.616706 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.616738 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.616768 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.616798 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.616890 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.617015 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.617098 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.617159 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.617337 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.617373 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.617415 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.617477 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.617658 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.617698 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.617732 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.617763 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.617865 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.617895 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.617925 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.617955 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.618096 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.618188 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.618235 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.618299 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.618484 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.618535 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.618617 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.618683 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.618918 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.618969 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.619042 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.619107 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.619247 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.619283 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.619315 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.619346 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.619440 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.619470 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.619502 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.619532 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.619627 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.619656 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.619685 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.619714 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.619801 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.619831 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.619860 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.619889 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.619980 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620010 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620039 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620068 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.620154 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620183 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620212 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620240 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.620332 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620361 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620390 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620419 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.620509 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620538 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620567 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620625 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.620711 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620737 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620764 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620790 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.620902 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.620933 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.620959 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.620986 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.621116 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.621171 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.621219 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.621253 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.621481 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.621526 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.621553 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.621580 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.621748 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.621785 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.621826 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.621873 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.622046 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.622103 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.622195 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.622234 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.622393 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.622493 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.622572 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.622626 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.622861 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.622913 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.622946 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.622975 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.623078 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.623107 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.623136 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.623162 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.623354 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.623404 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.623437 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.623501 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.623703 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.623738 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.623768 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.623797 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.623997 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.624045 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.624078 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.624108 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.624239 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.624283 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.624332 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.624361 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.624455 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.624484 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.624510 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.624536 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.624706 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.624747 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.624777 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.624805 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:14.624973 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:14.625008 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP Stack trace:
+[Tue May 26 21:51:14.625037 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:14.625064 2020] [php7:notice] [pid 14292] [client 127.0.0.1:57170] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.400051 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fopen(file.csv): failed to open stream: Permission denied in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 45
+[Tue May 26 21:51:32.400216 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.400251 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.400282 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fopen() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:45
+[Tue May 26 21:51:32.400350 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.400380 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.400409 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.400438 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.400581 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.400612 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.400645 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.400676 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.400857 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.400912 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.400955 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.400989 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.401101 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.401142 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.401173 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.401201 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.401299 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.401328 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.401370 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.401399 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.401496 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.401526 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.401559 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.401589 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.401707 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.401737 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.401766 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.401795 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.401945 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.401975 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.402004 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.402033 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.402123 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.402180 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.402210 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.402239 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.402365 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.402395 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.402424 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.402453 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.402579 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.402609 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.402638 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.402680 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.402771 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.402800 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.402847 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.402881 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.403006 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.403055 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.403138 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.403179 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.403325 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.403361 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.403424 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.403486 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.403700 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.403784 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.403822 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.403885 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.404031 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.404067 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.404101 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.404131 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.404353 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.404398 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.404440 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.404471 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.404603 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.404634 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.404671 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.404704 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.404824 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.404856 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.404890 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.404930 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.405161 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.405203 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.405243 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.405278 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.405447 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.405484 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.405517 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.405565 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.405781 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.405826 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.405865 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.405902 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.406067 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.406117 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.406147 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.406215 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.406400 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.406449 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.406480 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.406510 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.406662 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.406697 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.406728 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.406778 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.406904 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.406958 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.406988 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.407107 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.407365 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.407406 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.407477 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.407552 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.407761 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.407830 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.407880 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.407918 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.408132 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.408165 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.408198 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.408237 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.408397 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.408446 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.408476 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.408506 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.408627 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.408673 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.408706 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.408754 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.408868 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.408899 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.408933 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.408964 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.409149 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.409181 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.409215 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.409252 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.409387 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.409453 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.409502 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.409532 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.409690 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.409778 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.409858 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.409905 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.410028 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.410074 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.410126 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.410174 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.410324 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.410383 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.410418 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.410453 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.410673 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.410779 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.410842 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.410893 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Tue May 26 21:51:32.411065 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Warning:  fputcsv() expects parameter 1 to be resource, bool given in /Users/me/Sites/ytuber-ci4.local/public/tests/index.php on line 51
+[Tue May 26 21:51:32.411107 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP Stack trace:
+[Tue May 26 21:51:32.411154 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:0
+[Tue May 26 21:51:32.411199 2020] [php7:notice] [pid 14243] [client 127.0.0.1:57172] PHP   2. fputcsv() /Users/me/Sites/ytuber-ci4.local/public/tests/index.php:51
+[Wed May 27 16:24:46.561568 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP Warning:  require(/Users/me/Sites/ytuber-ci4.local/app/Config/../../system/bootstrap.php): failed to open stream: No such file or directory in /Users/me/Sites/ytuber-ci4.local/public/index.php on line 36, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Wed May 27 16:24:46.562127 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP Stack trace:, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Wed May 27 16:24:46.562208 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Wed May 27 16:24:46.562405 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP Fatal error:  require(): Failed opening required '/Users/me/Sites/ytuber-ci4.local/app/Config/../../system/bootstrap.php' (include_path='.:/usr/local/php5/lib/php') in /Users/me/Sites/ytuber-ci4.local/public/index.php on line 36, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Wed May 27 16:24:46.562481 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP Stack trace:, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Wed May 27 16:24:46.562539 2020] [php7:notice] [pid 340] [client 127.0.0.1:59943] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0, referer: http://ytuber-ci4.local/index.php/web/task/add
+[Thu May 28 04:28:15.958383 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP Fatal error:  Trait 'App\\Controllers\\Web\\App\\Controllers\\RestrictTrait' not found in /Users/me/Sites/ytuber-ci4.local/app/Controllers/Web/User.php on line 10
+[Thu May 28 04:28:15.958819 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP Stack trace:
+[Thu May 28 04:28:15.958859 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Thu May 28 04:28:15.958893 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   2. CodeIgniter\\CodeIgniter->run($routes = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Thu May 28 04:28:15.958925 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   3. CodeIgniter\\CodeIgniter->handleRequest($routes = *uninitialized*, $cacheConfig = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Thu May 28 04:28:15.958956 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   4. CodeIgniter\\CodeIgniter->tryToRouteIt($routes = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:360
+[Thu May 28 04:28:15.958985 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   5. CodeIgniter\\Router\\Router->handle($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:789
+[Thu May 28 04:28:15.959014 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   6. CodeIgniter\\Router\\Router->autoRoute($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:192
+[Thu May 28 04:28:15.959043 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60257] PHP   7. include_once() /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:575
+[Thu May 28 04:28:55.244170 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP Fatal error:  Trait 'App\\Controllers\\Web\\App\\Controllers\\RestrictTrait' not found in /Users/me/Sites/ytuber-ci4.local/app/Controllers/Web/User.php on line 10
+[Thu May 28 04:28:55.244336 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP Stack trace:
+[Thu May 28 04:28:55.244372 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Thu May 28 04:28:55.244406 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   2. CodeIgniter\\CodeIgniter->run($routes = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Thu May 28 04:28:55.244439 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   3. CodeIgniter\\CodeIgniter->handleRequest($routes = *uninitialized*, $cacheConfig = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Thu May 28 04:28:55.244473 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   4. CodeIgniter\\CodeIgniter->tryToRouteIt($routes = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:360
+[Thu May 28 04:28:55.244503 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   5. CodeIgniter\\Router\\Router->handle($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:789
+[Thu May 28 04:28:55.244532 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   6. CodeIgniter\\Router\\Router->autoRoute($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:192
+[Thu May 28 04:28:55.244561 2020] [php7:notice] [pid 14292] [client 127.0.0.1:60263] PHP   7. include_once() /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:575
+[Thu May 28 04:31:00.837027 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP Fatal error:  App\\Controllers\\Web\\User and App\\Controllers\\RestrictTrait define the same property ($helpers) in the composition of App\\Controllers\\Web\\User. However, the definition differs and is considered incompatible. Class was composed in /Users/me/Sites/ytuber-ci4.local/app/Controllers/Web/User.php on line 8
+[Thu May 28 04:31:00.837311 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP Stack trace:
+[Thu May 28 04:31:00.837461 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Thu May 28 04:31:00.837533 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   2. CodeIgniter\\CodeIgniter->run($routes = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/public/index.php:45
+[Thu May 28 04:31:00.837629 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   3. CodeIgniter\\CodeIgniter->handleRequest($routes = *uninitialized*, $cacheConfig = *uninitialized*, $returnResponse = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Thu May 28 04:31:00.837711 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   4. CodeIgniter\\CodeIgniter->tryToRouteIt($routes = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:360
+[Thu May 28 04:31:00.837814 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   5. CodeIgniter\\Router\\Router->handle($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:789
+[Thu May 28 04:31:00.837864 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   6. CodeIgniter\\Router\\Router->autoRoute($uri = *uninitialized*) /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:192
+[Thu May 28 04:31:00.837905 2020] [php7:notice] [pid 14243] [client 127.0.0.1:60298] PHP   7. include_once() /Users/me/Sites/ytuber-ci4.local/system/Router/Router.php:575
+[Wed Jul 15 20:13:09.019826 2020] [php7:notice] [pid 715] [client ::1:59070] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 65015808 bytes) in /Users/me/Sites/ytuber-ci4.local/app/Views/errors/html/error_exception.php on line 100
+[Wed Jul 15 20:13:09.021228 2020] [php7:notice] [pid 715] [client ::1:59070] PHP Stack trace:
+[Wed Jul 15 20:13:09.021307 2020] [php7:notice] [pid 715] [client ::1:59070] PHP   1. CodeIgniter\\Debug\\Exceptions->exceptionHandler() /Users/me/Sites/ytuber-ci4.local/system/Debug/Exceptions.php:0
+[Wed Jul 15 20:13:09.021357 2020] [php7:notice] [pid 715] [client ::1:59070] PHP   2. CodeIgniter\\Debug\\Exceptions->render() /Users/me/Sites/ytuber-ci4.local/system/Debug/Exceptions.php:172
+[Wed Jul 15 20:13:09.021401 2020] [php7:notice] [pid 715] [client ::1:59070] PHP   3. include() /Users/me/Sites/ytuber-ci4.local/system/Debug/Exceptions.php:299
+[Wed Jul 15 20:13:09.021443 2020] [php7:notice] [pid 715] [client ::1:59070] PHP   4. print_r() /Users/me/Sites/ytuber-ci4.local/app/Views/errors/html/error_exception.php:100
+[Wed Jul 15 20:13:46.095369 2020] [php7:notice] [pid 343] [client ::1:59076] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 79649278 bytes) in Unknown on line 0
+[Wed Jul 15 20:13:46.095579 2020] [php7:notice] [pid 343] [client ::1:59076] PHP Stack trace:
+[Wed Jul 15 20:13:46.095618 2020] [php7:notice] [pid 343] [client ::1:59076] PHP   1. CodeIgniter\\Debug\\Exceptions->exceptionHandler() /Users/me/Sites/ytuber-ci4.local/system/Debug/Exceptions.php:0
+[Thu Jul 16 18:35:01.989587 2020] [php7:notice] [pid 343] [client ::1:50555] PHP Fatal error:  Cannot redeclare App\\Entities\\User::getUsername() in /Users/me/Sites/ytuber-ci4.local/app/Entities/User.php on line 63
+[Thu Jul 16 18:35:01.990521 2020] [php7:notice] [pid 343] [client ::1:50555] PHP Stack trace:
+[Thu Jul 16 18:35:01.990585 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   1. {main}() /Users/me/Sites/ytuber-ci4.local/public/index.php:0
+[Thu Jul 16 18:35:01.990623 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   2. CodeIgniter\\CodeIgniter->run() /Users/me/Sites/ytuber-ci4.local/public/index.php:44
+[Thu Jul 16 18:35:01.990658 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   3. CodeIgniter\\CodeIgniter->handleRequest() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:308
+[Thu Jul 16 18:35:01.990690 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   4. CodeIgniter\\CodeIgniter->runController() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:400
+[Thu Jul 16 18:35:01.990723 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   5. App\\Controllers\\Api\\UserController->_remap() /Users/me/Sites/ytuber-ci4.local/system/CodeIgniter.php:910
+[Thu Jul 16 18:35:01.990757 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   6. App\\Controllers\\Api\\UserController->authBySession() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Api/BaseApiController.php:63
+[Thu Jul 16 18:35:01.990789 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   7. logged_in() /Users/me/Sites/ytuber-ci4.local/app/Controllers/Api/BaseApiController.php:42
+[Thu Jul 16 18:35:01.990821 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   8. Myth\\Auth\\Authentication\\LocalAuthenticator->check() /Users/me/Sites/ytuber-ci4.local/vendor/myth/auth/src/Helpers/Auth_helper.php:14
+[Thu Jul 16 18:35:01.990854 2020] [php7:notice] [pid 343] [client ::1:50555] PHP   9. Myth\\Auth\\Authentication\\LocalAuthenticator->isLoggedIn() /Users/me/Sites/ytuber-ci4.local/vendor/myth/auth/src/Authentication/LocalAuthenticator.php:70
+[Thu Jul 16 18:35:01.990887 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  10. App\\Models\\UserModel->find() /Users/me/Sites/ytuber-ci4.local/vendor/myth/auth/src/Authentication/AuthenticationBase.php:137
+[Thu Jul 16 18:35:01.990920 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  11. App\\Models\\UserModel->find() /Users/me/Sites/ytuber-ci4.local/app/Traits/Models/DisplayMode.php:119
+[Thu Jul 16 18:35:01.990952 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  12. CodeIgniter\\Database\\MySQLi\\Result->getFirstRow() /Users/me/Sites/ytuber-ci4.local/system/Model.php:383
+[Thu Jul 16 18:35:01.990985 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  13. CodeIgniter\\Database\\MySQLi\\Result->getResult() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:468
+[Thu Jul 16 18:35:01.991017 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  14. CodeIgniter\\Database\\MySQLi\\Result->getCustomResultObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:142
+[Thu Jul 16 18:35:01.991050 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  15. CodeIgniter\\Database\\MySQLi\\Result->fetchObject() /Users/me/Sites/ytuber-ci4.local/system/Database/BaseResult.php:195
+[Thu Jul 16 18:35:01.991082 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  16. is_subclass_of() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Thu Jul 16 18:35:01.991114 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  17. spl_autoload_call() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Thu Jul 16 18:35:01.991149 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  18. CodeIgniter\\Autoloader\\Autoloader->loadClass() /Users/me/Sites/ytuber-ci4.local/system/Database/MySQLi/Result.php:165
+[Thu Jul 16 18:35:01.991181 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  19. CodeIgniter\\Autoloader\\Autoloader->loadInNamespace() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:258
+[Thu Jul 16 18:35:01.991214 2020] [php7:notice] [pid 343] [client ::1:50555] PHP  20. CodeIgniter\\Autoloader\\Autoloader->requireFile() /Users/me/Sites/ytuber-ci4.local/system/Autoloader/Autoloader.php:296
